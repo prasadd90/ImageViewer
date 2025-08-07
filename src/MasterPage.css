@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+.sidebar {
+    /* height: 100vh; */
+    background: #343a40;
+    /* padding: 20px; */
+}
+ .sidebar a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+}
+.sidebar a:hover {
+    background: #495057;
+}
+.submenu {
+    padding-left: 20px;
+    display: none;
+    transition: max-height 0.3s ease-out;
+}
+.submenu.show {
+    display: block;
+}
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+.valid-feedback {
+    display: none;
+}
+.was-validated .form-control:valid ~ .valid-feedback {
+    display: block;
+}
+@media (max-width: 768px) {
+    .sidebar {
+        position: absolute;
+        left: -250px;
+        transition: left 0.3s;
+    }
+    .sidebar.active {
+        left: 0;
+    }
+    .content {
+        margin-left: 0;
+    }
+
+
+    /* App.css or MasterPage.css */
+
+/* Example CSS for MasterPage */
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #343a40; /* Dark background */
+    color: white;
+    padding: 20px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.sidebar a:hover {
+    background-color: #495057; /* Lighter background on hover */
+}
+
+.submenu {
+    display: none; /* Initially hide submenu */
+}
+
+.submenu.show {
+    display: block; /* Show submenu when active */
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+}

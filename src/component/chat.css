@@ -1,0 +1,63 @@
+@keyframes zoomIn {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+}
+
+.zoomed-img {
+  animation: zoomIn 0.4s forwards;
+}
+
+.zoomed-img.out {
+  animation: zoomOut 0.3s forwards;
+}
+.arrow-btn {
+  background: #fff;
+  border: 2px solid orangered;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  transition: background 0.2s, color 0.2s;
+  /* Example arrow SVG as background */
+  background-image: url('data:image/svg+xml;utf8,<svg fill="orangered" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px 30px;
+  
+}
+
+.arrow-btn:hover {
+  background: rgb(230, 225, 223);
+  /* border-color: #fff; */
+  background-image:
+   url('data:image/svg+xml;utf8,<svg fill="orangered" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>');
+
+}
+.arrow-btn.prev {
+  background-image: url('data:image/svg+xml;utf8,<svg fill="orangered" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 19V5l-11 7z"/></svg>');
+}
+
+.arrow-btn.prev:hover {
+  background-image: url('data:image/svg+xml;utf8,<svg fill="orangered" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 19V5l-11 7z"/></svg>');
+}

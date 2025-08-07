@@ -1,0 +1,104 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+  
+}
+h1{
+  background-color: rgb(101, 94, 94);
+  color: wheat;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column; /* Stack controls vertically */
+  gap: 10px; /* Space between elements */
+  max-width: 400px; /* Set a maximum width */
+}
+
+input, select, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  gap: 15px; /* Space between grid items */
+}
+
+.form-grid input, .form-grid select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.label {
+  display: block; /* Each label on a new line */
+  margin-bottom: 5px; /* Space between label and input */
+}
+
+.input-group {
+  margin-bottom: 15px; /* Space between input groups */
+}
+.button {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  padding: 10px 20px; /* Top/Bottom and Left/Right padding */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.button:active {
+  transform: scale(0.95); /* Slightly shrink on click */
+}
+.element {
+  margin: 20px; /* All sides */
+  margin-top: 10px; /* Top */
+  margin-right: 15px; /* Right */
+  margin-bottom: 10px; /* Bottom */
+  margin-left: 15px; /* Left */
+}
+
